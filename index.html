@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css">
+
+
+    <title>Almacenamiento</title>
+  </head>
+  <body>
+    <form id="formulario" onsubmit="return false">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" required/>
+      <label for="apellido">Apellido</label>
+      <input type="text" id="apellido" required/>
+      <label for="direccion">Dirección</label>
+      <input type="text" id="direccion" required/>
+      <label for="telefono">Teléfono</label>
+      <input type="text" id="telefono" required />
+      <button id="guardar">Guardar</button>
+      <input type="button" id="buscar" value="Buscar" />
+      <select id="selección">
+        <option value="0">Nombre</option>
+        <option value="1">Apellido</option>
+        <option value="2">Teléfono</option>
+      </select>
+
+      <input type="button" id="ordenar" value="Ordenar" />
+      <select id="selección2">
+        <option value="0">Nombre</option>
+        <option value="1">Apellido</option>
+      </select>
+      <input type="button" id="actualizar" value="Actualizar" />
+    </form>
+    <div id="datos"></div>
+    <div id="informacion"></div>
+
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
